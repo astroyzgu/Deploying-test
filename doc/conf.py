@@ -46,9 +46,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'WordCount'
-copyright = '2018, Harsha'
-author = 'Harsha'
+project = 'csstmock'
+copyright = '2022, SJTU'
+author = 'SJTU'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
