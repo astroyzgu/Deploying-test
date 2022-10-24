@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'csstmock'
-copyright = '2022, SJTU gropu'
+copyright = '2022, SJTU group'
 author = 'SJTU group'
 
 # The version info for the project you're documenting, acts as replacement for
