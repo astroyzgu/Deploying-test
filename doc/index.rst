@@ -4,9 +4,9 @@
    table of contents
 
 
-word-count
+csstmock
 ==========
-This is a document of astroyzgu
+This is a documentation of csstmock. 
 
 
 .. toctree::
