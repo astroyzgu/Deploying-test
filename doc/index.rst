@@ -13,7 +13,7 @@ It is edited by other account.
 .. toctree::
    :maxdepth: 2
 
-   hbt.md 
+   hbt.rst  
    purpose.rst
    dependencies.rst
    usage.rst
