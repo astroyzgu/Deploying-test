@@ -22,14 +22,14 @@ We show the adopted parameters during HBT+ running in the following.
 |`SubhaloPath`  |/home/cossim/Jiutian/M1000/hbt| subhalo path|
 |`SnapshotFileBase` | snapshot||
 |`MaxSnapshotIndex` | 127| |
-|`BoxSize`  | 1000$$Mpc/h$$| |
+|`BoxSize`  | 1000$Mpc/h$| |
 |`SofteningHalo`  | 0.004||
 |`SnapshotFormat` | gadget||
 |`GroupFileFormat` | gadget3_MXXL||
 |`MaxConcurrentIO` | 512||
 |`MinSnapshotIndex`  | 0||
 |`MinNumPartOfSub` | 20 | minimum number of particles in subhalos|
-|`MassInMsunh`  | 1e+10 $$M_{\odot}/h$$| mass unit|
+|`MassInMsunh`  | 1e+10 $M_{\odot}/h$| mass unit|
 |`LengthInMpch` | 1 Mpc/h| length unit |
 |`VelInKmS`  | 1 km/s| velocity unit |
 |`PeriodicBoundaryOn`  | 1||
@@ -77,8 +77,8 @@ The total number of subhalos in each file is not included!
 | name          |  value        | description       |
 | ------------- | -------------------- | ----------------- |
 | `HubbleParam`  | 100 | H |
-| `OmegaLambda0` | 0.6889 | $$O_{\Lambda0}$$ |
-| `OmegaM0`    | 0.3111 | $$O_{m0}$$  |
+| `OmegaLambda0` | 0.6889 | $O_{\Lambda0}$ |
+| `OmegaM0`    | 0.3111 | $O_{m0}$  |
 | `ScaleFactor` |     1 |   |
 
 
@@ -105,7 +105,7 @@ The total number of subhalos in each file is not included!
 |`R2SigmaComoving`| | |float32 |
 |`RHalfComoving`| | | float32|
 |`BoundR200CritComoving` | R200 under critical density | Mpc/h | float32|
-|`BoundM200Crit` | M200 under critica density  | $$10^{10}$$ $$M_{\odot}/h$$ | float32|
+|`BoundM200Crit` | M200 under critica density  | $10^{10}$ $M_{\odot}/h$ | float32|
 |`SpecificSelfPotentialEnergy`| | | float32|
 |`SpecificSelfKineticEnergy`| | | float32|
 |`SpecificAngularMomentum`| | |float32 |
