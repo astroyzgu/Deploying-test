@@ -10,6 +10,7 @@ word-count
 .. toctree::
    :maxdepth: 2
 
+   hbt.md 
    purpose.rst
    dependencies.rst
    usage.rst
