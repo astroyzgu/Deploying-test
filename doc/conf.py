@@ -42,6 +42,7 @@ extensions = [
 'sphinx.ext.napoleon',
 'sphinx.ext.viewcode',] 
 
+source_suffix = {'.rst':'restructuredtext', '.md': 'markdown', }
 myst_enable_extensions = ["dollarmath", "amsmath"] 
 myst_dmath_double_inline= True  
 myst_dmath_allow_labels = False 
@@ -68,7 +69,7 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-source_suffix = ['.rst', '.md']
+#source_suffix = ['.rst', '.md']
 #source_suffix = '.rst'
 
 # The master toctree document.
