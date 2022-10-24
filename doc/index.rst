@@ -14,6 +14,7 @@ It is edited by other account.
    :maxdepth: 2
 
    hbt.rst  
+   hbt.md 
    purpose.rst
    dependencies.rst
    usage.rst
