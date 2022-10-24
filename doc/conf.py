@@ -31,7 +31,36 @@ sys.path.insert(0, os.path.abspath('../source'))
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autodoc', 'recommonmark', 'sphinx_markdown_tables']
+# extensions = ['sphinx.ext.autodoc', 'recommonmark', 'sphinx_markdown_tables']
+extensions = [
+# 'recommonmark', 
+"myst_parser",
+#'sphinx_markdown_tables', 
+'sphinx_math_dollar', 
+'sphinx.ext.mathjax', 
+'sphinx.ext.autodoc',
+'sphinx.ext.napoleon',
+'sphinx.ext.viewcode',] 
+
+myst_enable_extensions = ["dollarmath", "amsmath"] 
+myst_dmath_double_inline= True  
+myst_dmath_allow_labels = False 
+myst_dmath_allow_space  = False  
+myst_dmath_allow_digits = True  
+
+mathjax_config = {
+    'tex2jax': {
+        'inlineMath': [ ["\\(","\\)"] ],
+        'displayMath': [["\\[","\\]"] ],
+    },
+}
+
+mathjax3_config = {
+  "tex": {
+    "inlineMath": [['\\(', '\\)']],
+    "displayMath": [["\\[", "\\]"]],
+  }
+} 
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
