@@ -46,9 +46,9 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'WordCount'
-copyright = '2018, Harsha'
-author = 'Harsha'
+project = 'csstmock'
+copyright = '2022, SJTU group'
+author = 'SJTU group'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -149,7 +149,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'wordcount', 'WordCount Documentation',
+    (master_doc, 'csstmock', 'csstmock Documentation',
      [author], 1)
 ]
 
@@ -160,8 +160,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'WordCount', 'WordCount Documentation',
-     author, 'WordCount', 'One line description of project.',
+    (master_doc, 'csstmock', 'csstmock Documentation',
+     author, 'SJTU group', 'One line description of project.',
      'Miscellaneous'),
 ]
 
