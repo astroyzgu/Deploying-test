@@ -6,7 +6,7 @@
 
 csstmock
 ==========
-This is a documentation of csstmock. 
+This is a documentation of csstmock. Edit pages: https://github.com/astroyzgu/csstmock/edit/master/doc/. 
 
 
 .. toctree::
