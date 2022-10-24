@@ -6,9 +6,12 @@
 
 word-count
 ==========
+This is a document of astroyzgu
+
 
 .. toctree::
    :maxdepth: 2
+
 
    purpose.rst
    dependencies.rst
