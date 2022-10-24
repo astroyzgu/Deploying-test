@@ -8,6 +8,7 @@ csstmock
 ==========
 This is a documentation of csstmock. Edit pages: https://github.com/astroyzgu/csstmock/edit/master/doc/. 
 
+It is edited by other account. 
 
 .. toctree::
    :maxdepth: 2
