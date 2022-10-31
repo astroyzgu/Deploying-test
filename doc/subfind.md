@@ -70,7 +70,7 @@ We show the blocks of **'subhalo_tab_xxx.ppp'** file in the following.
 ## supplement
 | name          | description        |   unit  |
 | ------------- | -------------------- |  ------ |
-|`group_mass`   | total host halo mass in $$log_{10}$$ | $$M_{\odot}/h$$ |
-|`sub_mass`   | total subhalo mass in $$log_{10}$$ | $$M_{\odot}/h$$ |
+|`group_mass`   | total host halo mass in $log_{10}$ | $M_{\odot}/h$ |
+|`sub_mass`   | total subhalo mass in $log_{10}$ | $M_{\odot}/h$ |
 
 
