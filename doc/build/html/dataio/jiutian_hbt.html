@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HBT &mdash; csstmock 0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}})</script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Subfind" href="jiutian_subfind.html" />
+    <link rel="prev" title="dataio – module" href="dataio.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> csstmock
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation and dependecies</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="dataio.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">dataio</span></code> – module</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="dataio.html#dataio-of-the-jiutian-simulation">dataio of the jiutian simulation</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">HBT</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subhalo-files">Subhalo files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code-parameters">Code parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#keys-value">keys value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fields-in-cosmology">fields in <code class="docutils literal notranslate"><span class="pre">Cosmology</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fields-in-subhalos">fields in <code class="docutils literal notranslate"><span class="pre">Subhalos</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="jiutian_subfind.html">Subfind</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dataio.html#read-information-from-jiutian">read information from Jiutian</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../asfunc/asfunc.html">angular selection function (asfunc)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials.html">Tutorials</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">csstmock</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="dataio.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">dataio</span></code> – module</a></li>
+      <li class="breadcrumb-item active">HBT</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/dataio/jiutian_hbt.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="hbt">
+<h1>HBT<a class="headerlink" href="#hbt" title="Permalink to this heading"></a></h1>
+<section id="subhalo-files">
+<h2>Subhalo files<a class="headerlink" href="#subhalo-files" title="Permalink to this heading"></a></h2>
+<p>Subhalo files are generated with HBT+ code (<a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2018MNRAS.474..604H/abstract">Han et al. 2018</a>). You can find a general description of output at <a class="reference external" href="https://github.com/Kambrian/HBTplus/wiki/Outputs">this website</a>. Dataset is saved in such a <strong>‘Subhalo_xxx.ppp.hdf5’</strong> file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Subhalo_xxx</span><span class="o">.</span><span class="n">ppp</span><span class="o">.</span><span class="n">hdf5</span><span class="p">:</span>
+<span class="n">xxx</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">snapshot</span> <span class="n">number</span> <span class="kn">from</span> <span class="mi">0</span> <span class="n">to</span> <span class="mf">127.</span> <span class="n">Here</span> <span class="mi">127</span> <span class="n">corresponds</span> <span class="n">to</span> <span class="n">redshift</span> <span class="n">z</span><span class="o">=</span><span class="mf">0.</span> 
+<span class="n">ppp</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">number</span> <span class="n">of</span> <span class="n">divided</span> <span class="n">regions</span><span class="o">.</span> 
+</pre></div>
+</div>
+<p>We show the adopted parameters during HBT+ running in the following.</p>
+</section>
+<section id="code-parameters">
+<h2>Code parameters<a class="headerlink" href="#code-parameters" title="Permalink to this heading"></a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>value</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotPath</span></code></p></td>
+<td><p>/home/cossim/Jiutian/M1000/simu</p></td>
+<td><p>snapshot path</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">HaloPath</span></code></p></td>
+<td><p>/home/cossim/Jiutian/M1000/groups</p></td>
+<td><p>host halo path</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SubhaloPath</span></code></p></td>
+<td><p>/home/cossim/Jiutian/M1000/hbt</p></td>
+<td><p>subhalo path</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotFileBase</span></code></p></td>
+<td><p>snapshot</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MaxSnapshotIndex</span></code></p></td>
+<td><p>127</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">BoxSize</span></code></p></td>
+<td><p>1000<span class="math notranslate nohighlight">\(Mpc/h\)</span></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SofteningHalo</span></code></p></td>
+<td><p>0.004</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotFormat</span></code></p></td>
+<td><p>gadget</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">GroupFileFormat</span></code></p></td>
+<td><p>gadget3_MXXL</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MaxConcurrentIO</span></code></p></td>
+<td><p>512</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MinSnapshotIndex</span></code></p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MinNumPartOfSub</span></code></p></td>
+<td><p>20</p></td>
+<td><p>minimum number of particles in subhalos</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MassInMsunh</span></code></p></td>
+<td><p>1e+10 <span class="math notranslate nohighlight">\(M_{\odot}/h\)</span></p></td>
+<td><p>mass unit</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">LengthInMpch</span></code></p></td>
+<td><p>1 Mpc/h</p></td>
+<td><p>length unit</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">VelInKmS</span></code></p></td>
+<td><p>1 km/s</p></td>
+<td><p>velocity unit</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">PeriodicBoundaryOn</span></code></p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotHasIdBlock</span></code></p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ParticleIdRankStyle</span></code></p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ParticleIdNeedHash</span></code></p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotIdUnsigned</span></code></p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SaveSubParticleProperties</span></code></p></td>
+<td><p>0</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MergeTrappedSubhalos</span></code></p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MajorProgenitorMassRatio</span></code></p></td>
+<td><p>0.8</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">BoundMassPrecision</span></code></p></td>
+<td><p>0.995</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SourceSubRelaxFactor</span></code></p></td>
+<td><p>3</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SubCoreSizeFactor</span></code></p></td>
+<td><p>0.25</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SubCoreSizeMin</span></code></p></td>
+<td><p>20</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">TreeAllocFactor</span> </code></p></td>
+<td><p>0.8</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">TreeNodeOpenAngle</span></code></p></td>
+<td><p>0.45</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">TreeMinNumOfCells</span></code></p></td>
+<td><p>10</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">MaxSampleSizeOfPotentialEstimate</span></code></p></td>
+<td><p>1000</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RefineMostboundParticle</span></code></p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>We show the information of <strong>‘Subhalo_xxx.ppp.hdf5’</strong> file in the following.</p>
+</section>
+<section id="keys-value">
+<h2>keys value<a class="headerlink" href="#keys-value" title="Permalink to this heading"></a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Cosmology</span></code></p></td>
+<td><p>cosmology parameters</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">NestedSubhalos</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">NumberOfFakeHalos</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">NumberOfFiles</span></code></p></td>
+<td><p>number of files in present snapshot</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">NumberOfNewSubhalos</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">NumberOfSubhalosInAllFiles</span></code></p></td>
+<td><p>number of subhalos in all files</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotId</span></code></p></td>
+<td><p>snapshot ID</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SubhaloParticles</span></code></p></td>
+<td><p>particles in subhalos</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Subhalos</span></code></p></td>
+<td><p>details of found subhalos</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-note notranslate"><div class="highlight"><pre><span></span>The total number of subhalos in each file is not included!
+</pre></div>
+</div>
+</section>
+<section id="fields-in-cosmology">
+<h2>fields in <code class="docutils literal notranslate"><span class="pre">Cosmology</span></code><a class="headerlink" href="#fields-in-cosmology" title="Permalink to this heading"></a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>value</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">HubbleParam</span></code></p></td>
+<td><p>100</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">OmegaLambda0</span></code></p></td>
+<td><p>0.6889</p></td>
+<td><p><span class="math notranslate nohighlight">\(O_{\Lambda0}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">OmegaM0</span></code></p></td>
+<td><p>0.3111</p></td>
+<td><p><span class="math notranslate nohighlight">\(O_{m0}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ScaleFactor</span></code></p></td>
+<td><p>1</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fields-in-subhalos">
+<h2>fields in <code class="docutils literal notranslate"><span class="pre">Subhalos</span></code><a class="headerlink" href="#fields-in-subhalos" title="Permalink to this heading"></a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>name</p></th>
+<th class="head"><p>description</p></th>
+<th class="head"><p>unit</p></th>
+<th class="head"><p>data type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">TrackId</span></code></p></td>
+<td><p>unique subhalo ID</p></td>
+<td><p></p></td>
+<td><p>int64</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Nbound</span></code></p></td>
+<td><p>number of bound particles</p></td>
+<td><p></p></td>
+<td><p>int64</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Mbound</span></code></p></td>
+<td><p>total mass of bound particles</p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">HostHaloId</span></code></p></td>
+<td><p>host halo ID</p></td>
+<td><p></p></td>
+<td><p>int64</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">Rank</span></code></p></td>
+<td><p>the order of subhaloes inside the group</p></td>
+<td><p></p></td>
+<td><p>int64</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">Depth</span></code></p></td>
+<td><p>the level of the subhalo in the merging hierarchy</p></td>
+<td><p></p></td>
+<td><p>int32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">LastMaxMass</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotIndexOfLastMaxMass</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>int32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotIndexOfLastIsolation</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>int32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotIndexOfBirth</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>int32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotIndexOfDeath</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>int32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotIndexOfSink</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>int32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">RmaxComoving</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">VmaxPhysical</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">LastMaxVmaxPhysical</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SnapshotIndexOfLastMaxVmax</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>int32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">R2SigmaComoving</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">RHalfComoving</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">BoundR200CritComoving</span></code></p></td>
+<td><p>R200 under critical density</p></td>
+<td><p>Mpc/h</p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">BoundM200Crit</span></code></p></td>
+<td><p>M200 under critica density</p></td>
+<td><p><span class="math notranslate nohighlight">\(10^{10}\)</span> <span class="math notranslate nohighlight">\(M_{\odot}/h\)</span></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SpecificSelfPotentialEnergy</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">SpecificSelfKineticEnergy</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SpecificAngularMomentum</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">InertialEigenVector</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">InertialEigenVectorWeighted</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">InertialTensor</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">InertialTensorWeighted</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ComovingAveragePosition</span></code></p></td>
+<td><p>average position from bound particles</p></td>
+<td><p>Mpc/h</p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">PhysicalAverageVelocity</span></code></p></td>
+<td><p>average velocity from bound particles</p></td>
+<td><p>km/s</p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">ComovingMostBoundPosition</span></code></p></td>
+<td><p>average position from the most bound particles</p></td>
+<td><p>Mpc/h</p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">PhysicalMostBoundVelocity</span></code></p></td>
+<td><p>average velocity from the most bound particles</p></td>
+<td><p>km/s</p></td>
+<td><p>float32</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">MostBoundParticleId</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>int64</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">SinkTrackId</span></code></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>int64</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-tip notranslate"><div class="highlight"><pre><span></span>`Nbound`: Subhalos with `Nbound=1` are also listed. 
+
+`Rank`: `Rank=0` indicating the most-massive subhalo inside each group (i.e., the main/central subhalo).
+
+`Depth`: A central subhalo has `Depth=0`; those directly merged to the host halo of the central have `Depth=1` (i.e., sub-subhalos); those directly merged to depth=1 subhalos have `Depth=2` (i.e., sub-sub-subhalos). 
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="dataio.html" class="btn btn-neutral float-left" title="dataio – module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="jiutian_subfind.html" class="btn btn-neutral float-right" title="Subfind" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, 0.1.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

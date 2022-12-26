@@ -14,7 +14,6 @@ This is a documentation of csstmock.
 
    overview.rst
    install.rst 
-   interface/interface.rst 
    dataio/dataio.rst 
    asfunc/asfunc.rst
    tutorials.rst  

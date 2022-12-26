@@ -1,0 +1,22 @@
+.. currentmodule:: csstmock.dataio.io_jiutian
+
+:mod:`dataio` -- module 
+========================
+
+dataio of the jiutian simulation 
+----------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   jiutian_hbt.md 
+   jiutian_subfind.md
+
+read information from Jiutian 
+----------------------------------
+.. autosummary::
+   :toctree: generated/
+   
+   read_hbt
+   read_group 
