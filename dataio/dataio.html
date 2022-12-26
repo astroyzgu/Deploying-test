@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dataio module &mdash; csstmock 0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}})</script>
+        <script>window.MathJax = {"tex": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="angular selection function (asfunc)" href="../asfunc/asfunc.html" />
+    <link rel="prev" title="Fortran Interface" href="../interface/interface.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> csstmock
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation and dependecies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interface/interface.html">Fortran Interface</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">dataio</span></code> module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#io-jiutian-dataio-of-the-jiutian-simulation"><code class="xref py py-mod docutils literal notranslate"><span class="pre">io_jiutian</span></code> – dataio of the jiutian simulation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../asfunc/asfunc.html">angular selection function (asfunc)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials.html">Tutorials</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">csstmock</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active"><code class="xref py py-mod docutils literal notranslate"><span class="pre">dataio</span></code> module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/dataio/dataio.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="dataio-module">
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">dataio</span></code> module<a class="headerlink" href="#dataio-module" title="Permalink to this heading"></a></h1>
+<section id="io-jiutian-dataio-of-the-jiutian-simulation">
+<h2><code class="xref py py-mod docutils literal notranslate"><span class="pre">io_jiutian</span></code> – dataio of the jiutian simulation<a class="headerlink" href="#io-jiutian-dataio-of-the-jiutian-simulation" title="Permalink to this heading"></a></h2>
+<p>The Jiutian Main Simulation is the high-resolution N-body simulations of strand <span class="math notranslate nohighlight">\(\rm \Lambda CDM\)</span> cosmology with <span class="math notranslate nohighlight">\(\Omega_m=0.3111\)</span>, <span class="math notranslate nohighlight">\(\Omega_\Lambda=0.6889\)</span>.
+This simulation box, running with Gadget3, is 1 Gpc/h with <span class="math notranslate nohighlight">\(6144^3\)</span> dark matter particles of <span class="math notranslate nohighlight">\(3.72 \times 10^8 M_{\odot}/h\)</span>.</p>
+<ul class="simple">
+<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">read_hbt()</span></code> read subhalo information from all <a class="reference internal" href="jiutian_hbt.html"><span class="doc">HBT</span></a> subhalo files.</p></li>
+<li><p><code class="xref py py-func docutils literal notranslate"><span class="pre">read_groups()</span></code> extract halo/subhalo informations from all <a class="reference internal" href="jiutian_subfind.html"><span class="doc">Subfind</span></a>  group files.</p></li>
+</ul>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this heading"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">csstmock.dataio.io_jiutian</span> <span class="kn">import</span> <span class="n">read_hbt</span><span class="p">,</span> <span class="n">read_groups</span>
+<span class="n">snapnum</span> <span class="o">=</span> <span class="mi">127</span>
+<span class="n">basedir</span> <span class="o">=</span> <span class="s1">&#39;/home/cossim/Jiutian/M1000/&#39;</span>
+<span class="n">basedir_hbt</span>    <span class="o">=</span> <span class="n">basedir</span> <span class="o">+</span> <span class="s1">&#39;/hbt/&#39;</span>
+<span class="n">basedir_groups</span> <span class="o">=</span> <span class="n">basedir</span> <span class="o">+</span> <span class="s1">&#39;/groups/&#39;</span>
+<span class="n">blocks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ComovingAveragePosition&#39;</span><span class="p">,</span> <span class="s1">&#39;PhysicalAverageVelocity&#39;</span><span class="p">,</span> \
+          <span class="s1">&#39;LastMaxMass&#39;</span><span class="p">,</span><span class="s1">&#39;VmaxPhysical&#39;</span><span class="p">,</span> \
+          <span class="s1">&#39;Mbound&#39;</span><span class="p">,</span> <span class="s1">&#39;Nbound&#39;</span><span class="p">,</span> <span class="s1">&#39;Rank&#39;</span><span class="p">,</span> \
+          <span class="s1">&#39;TrackId&#39;</span><span class="p">,</span> <span class="s1">&#39;HostHaloId&#39;</span><span class="p">]</span>
+<span class="n">DATACOLLECT_hbt</span><span class="p">,</span> <span class="n">DATATYPE_hbt</span> <span class="o">=</span> <span class="n">read_hbt</span><span class="p">(</span><span class="n">snapnum</span><span class="p">,</span> <span class="n">blocks</span><span class="p">,</span> <span class="n">basedir_hbt</span><span class="p">)</span>
+
+<span class="c1"># host halo information from subfind</span>
+<span class="n">blocks</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;group_nr&#39;</span><span class="p">,</span> <span class="s1">&#39;group_mass&#39;</span><span class="p">]</span>
+<span class="n">DATACOLLECT_groups</span><span class="p">,</span> <span class="n">DATATYPE_groups</span> <span class="o">=</span> <span class="n">read_groups</span><span class="p">(</span><span class="n">snapnum</span><span class="p">,</span> <span class="n">blocks</span><span class="p">,</span> <span class="n">basedir_groups</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../interface/interface.html" class="btn btn-neutral float-left" title="Fortran Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../asfunc/asfunc.html" class="btn btn-neutral float-right" title="angular selection function (asfunc)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, 0.1.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
