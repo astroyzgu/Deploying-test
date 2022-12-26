@@ -11,12 +11,12 @@ jobs:
           pip install sphinx sphinx_rtd_theme myst_parser sphinx_math_dollar jieba3k
       - name: Sphinx build
         run: |
-          sphinx-build doc _build
+          sphinx-build doc/source doc/_build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
         with:
           publish_branch: gh-pages
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _build/
+          publish_dir: doc/_build/
           force_orphan: true
