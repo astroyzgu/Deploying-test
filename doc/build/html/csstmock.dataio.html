@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>csstmock.dataio package &mdash; csstmock 0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> csstmock
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">csstmock.dataio package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-csstmock.dataio.io_jiutian">csstmock.dataio.io_jiutian module</a><ul>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.collect4csstmock"><code class="docutils literal notranslate"><span class="pre">collect4csstmock()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.lightcone4csstmock"><code class="docutils literal notranslate"><span class="pre">lightcone4csstmock()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.nexthaloid"><code class="docutils literal notranslate"><span class="pre">nexthaloid()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.read_edition0"><code class="docutils literal notranslate"><span class="pre">read_edition0()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.read_groups"><code class="docutils literal notranslate"><span class="pre">read_groups()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.read_groups_subhalos"><code class="docutils literal notranslate"><span class="pre">read_groups_subhalos()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.read_groups_subhalos_split"><code class="docutils literal notranslate"><span class="pre">read_groups_subhalos_split()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.read_hbt"><code class="docutils literal notranslate"><span class="pre">read_hbt()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.read_hbt_head"><code class="docutils literal notranslate"><span class="pre">read_hbt_head()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.read_hbt_subhalos"><code class="docutils literal notranslate"><span class="pre">read_hbt_subhalos()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.read_hbt_subhalos_split"><code class="docutils literal notranslate"><span class="pre">read_hbt_subhalos_split()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.readsnapshot"><code class="docutils literal notranslate"><span class="pre">readsnapshot()</span></code></a></li>
+<li><a class="reference internal" href="#csstmock.dataio.io_jiutian.subfind_catalog"><code class="docutils literal notranslate"><span class="pre">subfind_catalog</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-csstmock.dataio">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">csstmock</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">csstmock.dataio package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/csstmock.dataio.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="csstmock-dataio-package">
+<h1>csstmock.dataio package<a class="headerlink" href="#csstmock-dataio-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-csstmock.dataio.io_jiutian">
+<span id="csstmock-dataio-io-jiutian-module"></span><h2>csstmock.dataio.io_jiutian module<a class="headerlink" href="#module-csstmock.dataio.io_jiutian" title="Permalink to this heading"></a></h2>
+<p>This “io_jiutian” module is writen for extracting data from Jiutian simulation.</p>
+<p>collect4csstmock: perpare data for the construction of mock catalog.</p>
+<p>read_groups:  extract halo/subhalo informations of one snapshot from all subfind group files.</p>
+<p>read_hbt: read subhalo information of one snapshot from all SubSnap files.</p>
+<p>nexthaloid: determine the host halo id in next snapshot.</p>
+<p>Wirtten by Qingyang Li, Yizhou Gu (2022/11)</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.collect4csstmock">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">collect4csstmock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">snapnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basedir_hbt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basedir_groups</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#collect4csstmock"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.collect4csstmock" title="Permalink to this definition"></a></dt>
+<dd><p>Collect input data for construction of csstmock from Jiutian using multiprocessing.
+Using 72 threads, it takes ~ 20 min (10 min for readin and 10 min for finding next halo id).</p>
+<p>Wirtten by Qingyang Li, Yizhou Gu</p>
+<section id="parameters">
+<h3>Parameters:<a class="headerlink" href="#parameters" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>snapnum: int</dt><dd><p>the number of snapshot</p>
+</dd>
+<dt>basedir_hbt: str</dt><dd><p>file path for hbt data</p>
+</dd>
+<dt>basedir_groups: str</dt><dd><p>file path for subfind data (FoF)</p>
+</dd>
+</dl>
+</section>
+<section id="return">
+<h3>Return:<a class="headerlink" href="#return" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Nsubs: int</dt><dd><p>number of subhalos</p>
+</dd>
+<dt>INPUT_FORT_LONG: ndarray</dt><dd><p>include all int64  type data information</p>
+</dd>
+<dt>INPUT_FORT_DOUBLE: ndarray</dt><dd><p>include all float64 type data information</p>
+</dd>
+</dl>
+</section>
+<section id="details-of-subhalo-information">
+<h3>Details of subhalo information:<a class="headerlink" href="#details-of-subhalo-information" title="Permalink to this heading"></a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">INPUT_FORT_LONG</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">1.</span> <span class="s1">&#39;host_id&#39;</span><span class="p">:</span>   <span class="n">host</span> <span class="n">halo</span> <span class="n">ID</span> <span class="ow">in</span> <span class="n">present</span> <span class="n">snapshot</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">2.</span> <span class="s1">&#39;rank&#39;</span><span class="p">:</span>      <span class="n">subhalo</span> <span class="n">order</span> <span class="p">(</span><span class="n">rank</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span> <span class="n">central</span> <span class="n">halo</span> <span class="p">(</span><span class="n">most</span> <span class="n">massive</span><span class="p">);</span> <span class="n">rank</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="n">subhalos</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">3.</span> <span class="s1">&#39;sub_id&#39;</span><span class="p">:</span>    <span class="n">trackID</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">4.</span> <span class="s1">&#39;host_nextid&#39;</span><span class="p">:</span> <span class="n">host</span> <span class="n">halo</span> <span class="n">ID</span> <span class="ow">in</span> <span class="nb">next</span> <span class="n">snapshot</span> <span class="p">(</span><span class="o">-</span><span class="mi">99</span> <span class="n">means</span> <span class="ow">not</span> <span class="n">found</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">INPUT_FORT_DOUBLE</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span><span class="o">-</span><span class="mf">3.</span> <span class="s1">&#39;sub_pos&#39;</span><span class="p">:</span> <span class="n">position</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">4</span><span class="o">-</span><span class="mf">6.</span> <span class="s1">&#39;sub_velocity&#39;</span><span class="p">:</span> <span class="n">velocity</span> <span class="p">(</span><span class="n">vx</span><span class="p">,</span> <span class="n">vy</span><span class="p">,</span> <span class="n">vz</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">7.</span>   <span class="s1">&#39;host_mass&#39;</span><span class="p">:</span> <span class="n">host</span> <span class="n">halo</span> <span class="n">mass</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">8.</span>   <span class="s1">&#39;sub_mass&#39;</span><span class="p">:</span>  <span class="n">subhalo</span> <span class="n">mass</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">9.</span>   <span class="s1">&#39;Peakmass&#39;</span><span class="p">:</span> <span class="n">Peakmass</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">10.</span>  <span class="s1">&#39;sub_velmax&#39;</span><span class="p">:</span> <span class="n">maximum</span> <span class="n">circular</span> <span class="n">velocity</span> <span class="n">of</span> <span class="n">subhalo</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Note</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mass</span> <span class="ow">in</span> <span class="n">unit</span> <span class="n">of</span> <span class="n">Msun</span><span class="o">/</span><span class="n">h</span> <span class="n">using</span> <span class="n">log</span> <span class="n">values</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cordinates</span> <span class="ow">in</span> <span class="n">unit</span> <span class="n">of</span> <span class="n">Mpc</span><span class="o">/</span><span class="n">h</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">velocity</span> <span class="ow">in</span> <span class="n">unit</span> <span class="n">of</span> <span class="n">km</span><span class="o">/</span><span class="n">s</span>
+</pre></div>
+</div>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.lightcone4csstmock">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">lightcone4csstmock</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#lightcone4csstmock"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.lightcone4csstmock" title="Permalink to this definition"></a></dt>
+<dd><p>Read the Jiutian lightcone for CSSTMOCK. A small, test edition of Jiutian lightcone by Zhenlin Tan.
+It takes ~600s to readin.</p>
+<p>Provided by Zhenlin Tan, Jiaxin Han</p>
+<section id="id1">
+<h3>Return:<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Nsubs: int</dt><dd><p>number of subhalos</p>
+</dd>
+<dt>INPUT_FORT_LONG: ndarray</dt><dd><p>include all int64   type data information</p>
+</dd>
+<dt>INPUT_FORT_DOUBLE: ndarray</dt><dd><p>include all float64 type data information</p>
+</dd>
+</dl>
+</section>
+<section id="details-of-lightcone-data">
+<h3>Details of lightcone data:<a class="headerlink" href="#details-of-lightcone-data" title="Permalink to this heading"></a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">INPUT_FORT_LONG</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">1.</span> <span class="s1">&#39;host_id&#39;</span><span class="p">:</span>   <span class="n">host</span> <span class="n">halo</span> <span class="n">ID</span><span class="p">,</span> <span class="kn">from</span> <span class="nn">fof</span><span class="p">,</span> <span class="s1">&#39;group_nr&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">2.</span> <span class="s1">&#39;rank&#39;</span><span class="p">:</span>      <span class="n">subhalo</span> <span class="n">order</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">3.</span> <span class="s1">&#39;sub_id&#39;</span><span class="p">:</span>    <span class="s1">&#39;TrackID&#39;</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">INPUT_FORT_DOUBLE</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">1.</span>   <span class="s1">&#39;ra&#39;</span><span class="p">:</span> <span class="n">Right</span> <span class="n">Ascension</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">2.</span>   <span class="s1">&#39;dec&#39;</span><span class="p">:</span> <span class="n">Declination</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">3.</span>   <span class="s1">&#39;d_comoving&#39;</span><span class="p">:</span> <span class="n">comoving</span> <span class="n">distance</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">4.</span>   <span class="s1">&#39;redshift_true&#39;</span><span class="p">:</span> <span class="n">cosmology</span> <span class="n">redshift</span><span class="p">,</span> <span class="n">z_cos</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">5.</span>   <span class="s1">&#39;redshift_obs&#39;</span><span class="p">:</span> <span class="n">observed</span> <span class="n">redshift</span><span class="p">,</span> <span class="n">z_obs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">6.</span>   <span class="s1">&#39;v_lfs&#39;</span><span class="p">:</span> <span class="n">line</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">sight</span> <span class="n">velocity</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">7.</span>   <span class="s1">&#39;group_mass&#39;</span><span class="p">:</span>  <span class="n">host</span> <span class="n">halo</span> <span class="n">mass</span> <span class="kn">from</span> <span class="nn">fof</span><span class="p">,</span> <span class="s1">&#39;group_mass&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">8.</span>   <span class="s1">&#39;shMbound&#39;</span><span class="p">:</span> <span class="n">subhalo</span> <span class="n">mass</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">9.</span>   <span class="s1">&#39;PeakMass&#39;</span><span class="p">:</span> <span class="n">peak</span> <span class="n">mass</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">10.</span>   <span class="s1">&#39;vmax&#39;</span><span class="p">:</span>     <span class="nb">max</span> <span class="n">circular</span> <span class="n">velocity</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Note</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mass</span> <span class="ow">in</span> <span class="n">unit</span> <span class="n">of</span> <span class="n">Msun</span><span class="o">/</span><span class="n">h</span> <span class="n">using</span> <span class="n">log</span> <span class="n">values</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cordinates</span> <span class="ow">in</span> <span class="n">unit</span> <span class="n">of</span> <span class="n">Mpc</span><span class="o">/</span><span class="n">h</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">velocity</span> <span class="ow">in</span> <span class="n">unit</span> <span class="n">of</span> <span class="n">km</span><span class="o">/</span><span class="n">s</span>
+</pre></div>
+</div>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.nexthaloid">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">nexthaloid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">TrackId</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">TrackIdnext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">GroupsIdnext</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#nexthaloid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.nexthaloid" title="Permalink to this definition"></a></dt>
+<dd><p>determine the host halo id in next snapshot.</p>
+<section id="id2">
+<h3>Parameters:<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>TrackId: ndarray, int64</dt><dd><p>TrackId in present snapshot</p>
+</dd>
+<dt>TrackIdnext: ndarray, int64</dt><dd><p>TrackId in next snapshot</p>
+</dd>
+<dt>GroupsIdnext: ndarray, int64</dt><dd><p>GroupsId (host halo id) in next snapshot from subfind data (FoF)</p>
+</dd>
+</dl>
+</section>
+<section id="id3">
+<h3>Return:<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>GroupsId: ndarray, int64</dt><dd><p>the corresponding GroupsId (host halo id) in next snapshot or -99 (no match)</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.read_edition0">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">read_edition0</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">props</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#read_edition0"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.read_edition0" title="Permalink to this definition"></a></dt>
+<dd><p>Read the light-cone of Jiu-tian generated by Zhenlin Tan.
+–&gt;  a small, test edition of Jiutian lightcone.
+parameters:
+———–</p>
+<section id="id4">
+<h3>return:<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
+<p>This script is written by Zhenlin Tan</p>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.read_groups">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">read_groups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">snapnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blocks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basedir_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/cossim/Jiutian/M1000/groups/'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#read_groups"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.read_groups" title="Permalink to this definition"></a></dt>
+<dd><p>extract halo/subhalo informations from all subfind group files with multiprocessing</p>
+<p>Wirtten by Qingyang Li, Yizhou Gu</p>
+<section id="id5">
+<h3>Parameters:<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>snapnum: int</dt><dd><p>the number of snapshot</p>
+</dd>
+<dt>blocks:  list</dt><dd><p>the name of blocks</p>
+</dd>
+<dt>basedir_groups: str</dt><dd><p>file path for subfind data (FoF)</p>
+</dd>
+</dl>
+</section>
+<section id="returns">
+<h3>Returns:<a class="headerlink" href="#returns" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>DATAALL: dict</dt><dd><p>datasets of blocks. For example, group_pos = DATAALL[‘group_pos’][:]</p>
+</dd>
+<dt>DATATYPE: dict</dt><dd><p>data type of blocks</p>
+</dd>
+</dl>
+</section>
+<section id="note-also">
+<h3>Note also:<a class="headerlink" href="#note-also" title="Permalink to this heading"></a></h3>
+<p>Host halo and subhalo information can be obtained together.</p>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.read_groups_subhalos">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">read_groups_subhalos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blocks</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#read_groups_subhalos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.read_groups_subhalos" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.read_groups_subhalos_split">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">read_groups_subhalos_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filenames</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blocks</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#read_groups_subhalos_split"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.read_groups_subhalos_split" title="Permalink to this definition"></a></dt>
+<dd><p>The worker of read_groups_subhalos for parallel</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.read_hbt">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">read_hbt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">snapnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blocks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basedir_hbt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/home/cossim/Jiutian/M1000/hbt/'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#read_hbt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.read_hbt" title="Permalink to this definition"></a></dt>
+<dd><p>read subhalo information from all SubSnap file with multiprocessing
+Wirtten by Qingyang Li</p>
+<section id="id6">
+<h3>Parameters:<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>snapnum: int</dt><dd><p>the number of snapshot</p>
+</dd>
+<dt>blocks:  list</dt><dd><p>the name of blocks</p>
+</dd>
+<dt>basedir_groups: str</dt><dd><p>file path for subfind data (FoF)</p>
+</dd>
+</dl>
+</section>
+<section id="id7">
+<h3>Returns:<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>DATAALL: dict</dt><dd><p>datasets of blocks. for example, Nbound = DATAALL[‘Nbound’][:]</p>
+</dd>
+<dt>DATATYPE: dict</dt><dd><p>data type of blocks</p>
+</dd>
+</dl>
+</section>
+<section id="id8">
+<h3>Note also<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h3>
+<p>Subhalos with Nbound&lt;=1 are not included.</p>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.read_hbt_head">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">read_hbt_head</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#read_hbt_head"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.read_hbt_head" title="Permalink to this definition"></a></dt>
+<dd><p>Read some headers from hbt files.</p>
+<p>Note:</p>
+<p>Cosmology in all files are same at same snapshot.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.read_hbt_subhalos">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">read_hbt_subhalos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blocks</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#read_hbt_subhalos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.read_hbt_subhalos" title="Permalink to this definition"></a></dt>
+<dd><p>read subhalo information from one SubSnap file</p>
+<p>Wirtten by Qingyang Li</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>path</em><em> of </em><em>file</em>) – </p></li>
+<li><p><strong>blocks</strong> (<em>name</em><em> of </em><em>blocks</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>Nsub</strong> (<em>subhalo number</em>)</p></li>
+<li><p><strong>DATA</strong> (<em>dict, datasets of blocks</em>)</p></li>
+<li><p><strong>DATATYPE</strong> (<em>dict, data type of blocks</em>)</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.read_hbt_subhalos_split">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">read_hbt_subhalos_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filenames</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blocks</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#read_hbt_subhalos_split"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.read_hbt_subhalos_split" title="Permalink to this definition"></a></dt>
+<dd><p>The worker of read_hbt_subhalos for parallel</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.readsnapshot">
+<span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">readsnapshot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">snapnum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basedir_hbt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basedir_groups</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#readsnapshot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.readsnapshot" title="Permalink to this definition"></a></dt>
+<dd><p>Collect input data for construction of csstmock from Jiutian using multiprocessing.
+Using 72 threads, it takes ~ 20 min (10 min for readin and 10 min for finding next halo id).</p>
+<p>Wirtten by Qingyang Li, Yizhou Gu</p>
+<section id="id9">
+<h3>Parameters:<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>snapnum: int</dt><dd><p>the number of snapshot</p>
+</dd>
+<dt>basedir_hbt: str</dt><dd><p>file path for hbt data</p>
+</dd>
+<dt>basedir_groups: str</dt><dd><p>file path for subfind data (FoF)</p>
+</dd>
+</dl>
+</section>
+<section id="id10">
+<h3>Return:<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
+<dl class="simple">
+<dt>Nsubs: int</dt><dd><p>number of subhalos</p>
+</dd>
+<dt>INPUT_FORT_LONG: ndarray</dt><dd><p>include all int64  type data information</p>
+</dd>
+<dt>INPUT_FORT_DOUBLE: ndarray</dt><dd><p>include all float64 type data information</p>
+</dd>
+</dl>
+</section>
+<section id="id11">
+<h3>Details of subhalo information:<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">INPUT_FORT_LONG</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int64</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">1.</span> <span class="s1">&#39;host_id&#39;</span><span class="p">:</span>   <span class="n">host</span> <span class="n">halo</span> <span class="n">ID</span> <span class="ow">in</span> <span class="n">present</span> <span class="n">snapshot</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">2.</span> <span class="s1">&#39;rank&#39;</span><span class="p">:</span>      <span class="n">subhalo</span> <span class="n">order</span> <span class="p">(</span><span class="n">rank</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span> <span class="n">central</span> <span class="n">halo</span> <span class="p">(</span><span class="n">most</span> <span class="n">massive</span><span class="p">);</span> <span class="n">rank</span> <span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="n">subhalos</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">3.</span> <span class="s1">&#39;sub_id&#39;</span><span class="p">:</span>    <span class="n">trackID</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">4.</span> <span class="s1">&#39;host_nextid&#39;</span><span class="p">:</span> <span class="n">host</span> <span class="n">halo</span> <span class="n">ID</span> <span class="ow">in</span> <span class="nb">next</span> <span class="n">snapshot</span> <span class="p">(</span><span class="o">-</span><span class="mi">99</span> <span class="n">means</span> <span class="ow">not</span> <span class="n">found</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">INPUT_FORT_DOUBLE</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span><span class="o">-</span><span class="mf">3.</span> <span class="s1">&#39;sub_pos&#39;</span><span class="p">:</span> <span class="n">position</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">4</span><span class="o">-</span><span class="mf">6.</span> <span class="s1">&#39;sub_velocity&#39;</span><span class="p">:</span> <span class="n">velocity</span> <span class="p">(</span><span class="n">vx</span><span class="p">,</span> <span class="n">vy</span><span class="p">,</span> <span class="n">vz</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">7.</span>   <span class="s1">&#39;host_mass&#39;</span><span class="p">:</span> <span class="n">host</span> <span class="n">halo</span> <span class="n">mass</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">8.</span>   <span class="s1">&#39;sub_mass&#39;</span><span class="p">:</span>  <span class="n">subhalo</span> <span class="n">mass</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">9.</span>   <span class="s1">&#39;Peakmass&#39;</span><span class="p">:</span> <span class="n">Peakmass</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mf">10.</span>  <span class="s1">&#39;sub_velmax&#39;</span><span class="p">:</span> <span class="n">maximum</span> <span class="n">circular</span> <span class="n">velocity</span> <span class="n">of</span> <span class="n">subhalo</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Note</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mass</span> <span class="ow">in</span> <span class="n">unit</span> <span class="n">of</span> <span class="n">Msun</span><span class="o">/</span><span class="n">h</span> <span class="n">using</span> <span class="n">log</span> <span class="n">values</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cordinates</span> <span class="ow">in</span> <span class="n">unit</span> <span class="n">of</span> <span class="n">Mpc</span><span class="o">/</span><span class="n">h</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">velocity</span> <span class="ow">in</span> <span class="n">unit</span> <span class="n">of</span> <span class="n">km</span><span class="o">/</span><span class="n">s</span>
+</pre></div>
+</div>
+</section>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="csstmock.dataio.io_jiutian.subfind_catalog">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">csstmock.dataio.io_jiutian.</span></span><span class="sig-name descname"><span class="pre">subfind_catalog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">curfile</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/csstmock/dataio/io_jiutian.html#subfind_catalog"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#csstmock.dataio.io_jiutian.subfind_catalog" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>code for reading Subfind’s subhalo_tab files</p>
+</dd></dl>
+
+</section>
+<section id="module-csstmock.dataio">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-csstmock.dataio" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, 0.1.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
